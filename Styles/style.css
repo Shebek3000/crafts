@@ -1,0 +1,149 @@
+		body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2ded8;
+            color: #333;
+			width: 1250px;
+	margin: auto;
+        }
+        header {
+			background: url(../Images/logo.png) no-repeat ;
+            //background-color: #5d4037;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+			height:150px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #8d6e63;
+            padding: 0.5rem 0;
+			
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 40px;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+			}
+			
+        .leathercraft, .woodworking {
+           
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: white;
+            padding: 1.5rem;
+			
+        }
+		.form {
+			width:600px;
+			
+		}
+        h2 {
+            color: #5d4037;
+        }
+        footer {
+            background-color: #5d4037;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+	/*за галерията*/	
+		.myImg {
+		border-radius: 5px;
+		cursor: pointer;
+		transition: 0.3s;
+		}
+
+		.myImg:hover {opacity: 0.7;}
+		
+		
+		.modal {
+		display: none; /* Скриване по подразбиране */
+		position: fixed; /* Стои на място */
+		z-index: 1; /* поставяне отгоре */
+		padding-top: 100px; /* Местоположение на кутията */
+		left: 0;
+		top: 0;
+		width: 100%; /* Пълна ширина */
+		height: 100%; /* Пълна височина */
+		overflow: auto; /* Активиране на превъртане, ако е необходимо */
+		background-color: rgb(0,0,0); /* Резервен цвят */
+		background-color: rgba(0,0,0,0.9); /* Черно с непрозрачност */
+		}
+
+
+	.modal-content {
+		margin: auto;
+		display: block;
+		width: 80%;
+		max-width: 900px;
+		}
+
+
+	.caption {
+		margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 900px;
+	text-align: center;
+	color: #ccc;
+	padding: 10px 0;
+	height: 150px;
+}
+
+/* добавяне на анимация */
+	.modal-content, .caption {  
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.6s;
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* бутон за затваряне */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+  
+}
+
